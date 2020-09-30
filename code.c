@@ -27,6 +27,7 @@ int main()
 void primeval()
 {
   printf("\nENTER FIRST PRIME NUMBER\n"); //prime check
+  //possible Buffer overflow here, length not validated.
   scanf("%d", &a);
   flag = prime(a);
   if(flag == 0)
